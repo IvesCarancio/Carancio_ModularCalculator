@@ -1,26 +1,29 @@
+
+#  This is the Function for addition
 def add(num1, num2):
     return num1 + num2
 
 
+# This is the Function for subtraction
 def subtract(num1, num2):
     return num1 - num2
 
 
-
+# This is the Function for multiplication
 def multiply(num1, num2):
     return num1 * num2
 
 
-
+#This is the Function for division
 def divide(num1, num2):
     return num1 / num2
 
 
-
+# This asks the user to enter two numbers
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 
-# Ask the user to choose an operation
+# Asks the user to choose an operation
 print("\nChoose an operation:")
 print("1. Addition")
 print("2. Subtraction")
@@ -29,7 +32,7 @@ print("4. Division")
 
 choice = input("Enter your choice (1-4): ")
 
-
+# This Perform the selected operation
 if choice == "1":
     result = add(num1, num2)
     operation = "addition"
@@ -50,8 +53,8 @@ elif choice == "4":
     operation = "division"
 
 else:
-    print("This is invalid.")
+    print("Invalid choice.")
     exit()
 
-# Display the final answer
-print(f"The result of {operation} is: {result}")
+# Displays the final answer
+print(f"\nThe result of {operation} is: {result}")
